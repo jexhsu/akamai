@@ -2,7 +2,7 @@ function getRandomInt(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
 
-module.exports = function generateAJR(mouseData) {
+function processMouseData(mouseData) {
     let randomIndex = -1;
     let dataArray = [];
     if (mouseData && typeof mouseData === "string" && mouseData.length > 0) {
@@ -26,4 +26,12 @@ module.exports = function generateAJR(mouseData) {
         dataArray = [id, type, x, y, t];
     }
     return [randomIndex, dataArray];
+}
+function rotateLeft(arr) {
+    return arr.slice(2).concat(arr.slice(0, 2));
+}
+
+module.exports = function actionJourneyRecord(mouseData = "") {
+    let [index, data] = processMouseData(mouseData);
+    return [data, index, rotateLeft(data)].join("|");
 }
