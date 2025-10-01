@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "akamai-v3-sensor-data-helper": "^1.1.0"
+    "akamai-v3-sensor-data-helper": "^1.1.0",
+    "node-tls-client": "^2.1.0",
+    "requests": "^0.3.0"
   }
 }
