@@ -1,4 +1,4 @@
-module.exports = original_sensor_data = {
+original_sensor_data = {
     "ver": "7yWwTvQOeLrfiho8fZYWXb8c2mBaJ/NNfivJ+m0aXa0=",
     "fpt": ";-1;dis;,7;true;true;true;-480;true;24;24;true;false;-1",
     "fpc": "4542",
